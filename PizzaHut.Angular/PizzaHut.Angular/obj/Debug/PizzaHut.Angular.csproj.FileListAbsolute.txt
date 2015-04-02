@@ -1,0 +1,12 @@
+D:\ASP\PizzaHut.Angular\PizzaHut.Angular\bin\PizzaHut.Angular.dll.config
+D:\ASP\PizzaHut.Angular\PizzaHut.Angular\bin\PizzaHut.Angular.dll
+D:\ASP\PizzaHut.Angular\PizzaHut.Angular\bin\PizzaHut.Angular.pdb
+D:\ASP\PizzaHut.Angular\PizzaHut.Angular\obj\Debug\PizzaHut.Angular.csprojResolveAssemblyReference.cache
+D:\ASP\PizzaHut.Angular\PizzaHut.Angular\obj\Debug\PizzaHut.Angular.dll
+D:\ASP\PizzaHut.Angular\PizzaHut.Angular\obj\Debug\PizzaHut.Angular.pdb
+D:\FutureWork\PizzaHut.Angular\PizzaHut.Angular\bin\PizzaHut.Angular.dll.config
+D:\FutureWork\PizzaHut.Angular\PizzaHut.Angular\bin\PizzaHut.Angular.dll
+D:\FutureWork\PizzaHut.Angular\PizzaHut.Angular\bin\PizzaHut.Angular.pdb
+D:\FutureWork\PizzaHut.Angular\PizzaHut.Angular\obj\Debug\PizzaHut.Angular.csprojResolveAssemblyReference.cache
+D:\FutureWork\PizzaHut.Angular\PizzaHut.Angular\obj\Debug\PizzaHut.Angular.dll
+D:\FutureWork\PizzaHut.Angular\PizzaHut.Angular\obj\Debug\PizzaHut.Angular.pdb
