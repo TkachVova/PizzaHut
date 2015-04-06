@@ -7,37 +7,35 @@
         <div class="span8">
 
             <!-- pizza info -->
-            <table class="table table-bordered">
+            <div class="well">
 
-                <tr class="well">
-                    <td class="tdRight" colspan="3" >
+                <div class="span3 offset10">
+                    <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                        <i class="icon-shopping-cart" />
+                        <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+                    </a>
+                </div>
+            </div>
+            <div class="span8">
+                <img ng-src="img/pizzas/a.png" alt="{{pizza.name}}" />
+            </div>
+            <div class="span4">
+                <b>{{pizza.ingridients}}</b>
+            </div>
+            <div style="clear:both"></div>
+
+
+
+                <div class="well">
+
+                    <div class="span3 offset10">
                         <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                             <i class="icon-shopping-cart" />
                             <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
-                            <span ng-show="cart.getTotalCount(pizza.id) > 0"><br />this item is in the cart</span>
                         </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="tdRight"><img ng-src="img/pizzas/a.png" alt="{{pizza.name}}" /></td>
-                    <td class="tdCenter"><b>{{pizza.ingridients}}</b></td>
-                    <td />
-                </tr>
-                
-
-                <tr class="well">
-                    <td class="tdRight" colspan="3" >
-                        <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
-                            <i class="icon-shopping-cart" />
-                            <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
-                            <span ng-show="cart.getTotalCount(pizza.id) > 0"><br />this item is in the cart</span>
-                        </a>
-                    </td>
-                </tr>
-
-            </table>
-        </div>
+                    </div>
+                </div>
+            </div>
 
         <!-- buttons -->
         <div class="span4">

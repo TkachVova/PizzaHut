@@ -3,17 +3,30 @@
 // the storeController contains two objects:
 // - store: contains the pizza list
 // - cart: the shopping cart object
-function storeController($scope, $routeParams, DataService) {
+function storeController($scope, $routeParams, $location, $http, DataService, pizzaService) {
 
     // get store and cart from service
     $scope.store = DataService.store;
     $scope.cart = DataService.cart;
+    $scope.order = DataService.order;
 
+    //getting pizza list from api/pizza
+    $scope.store.pizzas = 
+    {
+       id : "" ,
+       name : "",
+       ingridients : "",
+       price : ""
+    }
+
+    pizzaService.getPizzas($scope);
 
     
-    $scope.items = [];
-    for (var i = 0; i < 100; i++) $scope.items.push(i);
 
+    //for going to link after ng-click
+    $scope.go = function (path) {
+        $location.path(path);
+    };
 
     // use routing to pick the selected pizza
     if ($routeParams.pizzaId != null) {

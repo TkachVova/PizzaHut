@@ -1,57 +1,56 @@
 ﻿<!--Here we output pizzas (PizzaList) Main Page--> 
-<p>
-    <button class="btn btn-default" ng-disabled="store.currentPage == 0" ng-click="store.currentPage=store.currentPage-1">
-        <i class="icon-chevron-left" />Previous
-    </button>
-    {{store.currentPage+1}}/{{store.numberOfPages()}}
-    <button class="btn btn-default" ng-disabled="store.currentPage >= store.pizzas.length/store.pageSize - 1" ng-click="store.currentPage=store.currentPage+1">
-        Next <i class="icon-chevron-right" />
-    </button>
-</p>
 
-<table class="table table-bordered">
-    <tr class="well">
-        <td class="tdRight" colspan="4" >
-            <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
-                <i class="icon-shopping-cart" />
-                <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
-            </a>
-        </td>
-    </tr>
-    <tr ng-repeat="pizza in store.pizzas|slice:store.currentPage*store.pageSize:store.currentPage*store.pageSize+store.pageSize">
-        <td class="tdCenter"><img ng-src="img/pizzas/a.png" alt="{{pizza.name}}" width="100" height="73" /></td>
-        <td>
-            <a href="#/pizza/{{pizza.id}}"><b>{{pizza.name}}</b></a><br />
-            {{pizza.ingridients}}
-        </td>
-        <td class="tdRight">
-            {{pizza.price | currency}}
-        </td>
-        <td class="tdCenter">
-            <a href="" ng-click="cart.addItem(pizza.id, pizza.name, pizza.price, 1)">
-                add to cart
-            </a>
-        </td>
-    </tr>
+<div class="well">
+    <div class="span8">
+        <button class="btn btn-default" ng-disabled="store.currentPage == 0" ng-click="store.currentPage=store.currentPage-1">
+            <i class="icon-chevron-left" />Previous
+        </button>
+        {{store.currentPage+1}}/{{store.numberOfPages()}}
+        <button class="btn btn-default" ng-disabled="store.currentPage >= store.pizzas.length/store.pageSize - 1" ng-click="store.currentPage=store.currentPage+1">
+            Next <i class="icon-chevron-right" />
+        </button>
+    </div>
+    <div class="span2 offset2">
+        <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+            <i class="icon-shopping-cart" />
+            <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+        </a>
+    </div>
+</div>
     
-        <tr class="well">
-            <td class="tdRight" colspan="4">
-                <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
-                    <i class="icon-shopping-cart" />
-                    <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
-                </a>
-            </td>
-        </tr>
-</table>
+    
+<div class="span4 offset1"  ng-repeat="pizza in store.pizzas|slice:store.currentPage*store.pageSize:store.currentPage*store.pageSize+store.pageSize">
+    <a href="#/pizza/{{pizza.id}}"><b>{{pizza.name}}</b></a><br />
+    <img ng-src="img/pizzas/a.png" alt="{{pizza.name}}"/>
+    <p>{{pizza.ingridients|cut:true:40:' ...'}}</p>
+    <p>{{pizza.price | currency}}</p>
+    <p>
+        <a href="" ng-click="cart.addItem(pizza.id, pizza.name, pizza.price, 1)">
+            add {{pizza.name}} to cart
+        </a>
+    </p>
+    <br/><br/>
+</div>
+
+<div style="clear:both"></div>
 
 
 
-
-<button class="btn btn-default" ng-disabled="store.currentPage == 0" ng-click="store.currentPage=store.currentPage-1">
-    <i class="icon-chevron-left" />Previous
-</button>
-    {{store.currentPage+1}}/{{store.numberOfPages()}}
-<button class="btn btn-default" ng-disabled="store.currentPage >= store.pizzas.length/store.pageSize - 1" ng-click="store.currentPage=store.currentPage+1">
-    Next <i class="icon-chevron-right" />
-</button>
+<div class="well">
+    <div class="span8">
+        <button class="btn btn-default" ng-disabled="store.currentPage == 0" ng-click="store.currentPage=store.currentPage-1">
+            <i class="icon-chevron-left" />Previous
+        </button>
+        {{store.currentPage+1}}/{{store.numberOfPages()}}
+        <button class="btn btn-default" ng-disabled="store.currentPage >= store.pizzas.length/store.pageSize - 1" ng-click="store.currentPage=store.currentPage+1">
+            Next <i class="icon-chevron-right" />
+        </button>
+    </div>
+    <div class="span2 offset2">
+        <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+            <i class="icon-shopping-cart" />
+            <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+        </a>
+    </div>
+</div>
 

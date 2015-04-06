@@ -58,6 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\pizzas\a.png" />
+    <Content Include="js\order.js" />
+    <Content Include="js\user.js" />
+    <Content Include="partials\order.htm" />
+    <Content Include="partials\thanks.htm" />
     <Content Include="Scripts\dirPagination.js" />
     <Content Include="Scripts\dirPagination.spec.js" />
     <Content Include="Scripts\dirPagination.tpl.html" />
