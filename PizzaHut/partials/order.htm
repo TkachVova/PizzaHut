@@ -37,9 +37,9 @@
             <form name="orderForm" ng-submit="order.submit(); order.Post(); cart.clearItems()">
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"></span>
-                    <input type="text" class="form-control" placeholder="Your name" aria-describedby="basic-addon1" ng-model="order.userName" required>
-                    <input type="text" class="form-control" placeholder="Your address" aria-describedby="basic-addon1" ng-model="order.userAddress" required>
-                    <input type="tel" class="form-control" placeholder="Your phone number" aria-describedby="basic-addon1" ng-model="order.userPhone" required>
+                    <input type="text" class="form-control" placeholder="Your name" aria-describedby="basic-addon1" ng-model="order.client.name" required>
+                    <input type="text" class="form-control" placeholder="Your address" aria-describedby="basic-addon1" ng-model="order.deliveryAddress" required>
+                    <input type="tel" class="form-control" placeholder="Your phone number" aria-describedby="basic-addon1" ng-model="order.client.phone" required>
                     <button type="submit" class="btn btn-block btn-primary"
                             ng-disabled="!orderForm.$valid"
                             ng-click="go('/thanks')">

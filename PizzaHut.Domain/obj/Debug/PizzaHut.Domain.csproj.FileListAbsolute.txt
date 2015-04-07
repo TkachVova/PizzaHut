@@ -1,0 +1,9 @@
+D:\FutureWork\PizzaHut\PizzaHut.Domain\bin\Debug\PizzaHut.Domain.dll
+D:\FutureWork\PizzaHut\PizzaHut.Domain\bin\Debug\PizzaHut.Domain.pdb
+D:\FutureWork\PizzaHut\PizzaHut.Domain\obj\Debug\PizzaHut.Domain.csprojResolveAssemblyReference.cache
+D:\FutureWork\PizzaHut\PizzaHut.Domain\obj\Debug\PizzaHut.Domain.dll
+D:\FutureWork\PizzaHut\PizzaHut.Domain\obj\Debug\PizzaHut.Domain.pdb
+D:\FutureWork\PizzaHut\PizzaHut.Domain\bin\Debug\PizzaHut.Domain.dll.config
+D:\FutureWork\PizzaHut\PizzaHut.Domain\bin\Debug\EntityFramework.dll
+D:\FutureWork\PizzaHut\PizzaHut.Domain\bin\Debug\EntityFramework.xml
+D:\FutureWork\PizzaHut\PizzaHut.Domain\bin\Debug\MySql.Data.Entity.EF5.dll

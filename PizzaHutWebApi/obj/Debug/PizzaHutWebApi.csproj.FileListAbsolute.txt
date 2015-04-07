@@ -63,3 +63,5 @@ D:\FutureWork\PizzaHut\PizzaHutWebApi\bin\zh-Hant\System.Spatial.resources.dll
 D:\FutureWork\PizzaHut\PizzaHutWebApi\obj\Debug\PizzaHutWebApi.csprojResolveAssemblyReference.cache
 D:\FutureWork\PizzaHut\PizzaHutWebApi\obj\Debug\PizzaHutWebApi.dll
 D:\FutureWork\PizzaHut\PizzaHutWebApi\obj\Debug\PizzaHutWebApi.pdb
+D:\FutureWork\PizzaHut\PizzaHutWebApi\bin\PizzaHut.Domain.dll
+D:\FutureWork\PizzaHut\PizzaHutWebApi\bin\PizzaHut.Domain.pdb

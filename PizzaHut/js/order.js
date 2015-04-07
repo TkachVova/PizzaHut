@@ -1,8 +1,7 @@
 ﻿// order class
 function order() {
-    this.userName = "";
-    this.userAddress = "";
-    this.userPhone = "";
+    this.client = new customer("-1", "", "");
+    this.deliveryAddress = "";
     this.items = [];
 }
 
@@ -36,7 +35,7 @@ order.prototype.Post = function () {
 //Order.userAddress = this.userAddress;
 //Order.userPhone = this.userPhone;
 //Order.items = this.items;
-//alert(JSON.stringify(Order));
+alert(JSON.stringify(this));
 $.ajax({
     type: "POST",
     data: JSON.stringify(this),
@@ -47,3 +46,9 @@ this.ClearOrder();
 //alert(JSON.stringify(Order));
 };
  
+
+function customer(id, name, phone) {
+    this.id = id;
+    this.name = name;
+    this.phone = phone;
+}

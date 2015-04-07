@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHut", "PizzaHut\PizzaH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHutWebApi", "PizzaHutWebApi\PizzaHutWebApi.csproj", "{6BDAC536-AC8E-47FC-8F83-FD16D84DFE48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaHut.Domain", "PizzaHut.Domain\PizzaHut.Domain.csproj", "{A6183395-753C-4647-B9FE-6442341C839D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6BDAC536-AC8E-47FC-8F83-FD16D84DFE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BDAC536-AC8E-47FC-8F83-FD16D84DFE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BDAC536-AC8E-47FC-8F83-FD16D84DFE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6183395-753C-4647-B9FE-6442341C839D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6183395-753C-4647-B9FE-6442341C839D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6183395-753C-4647-B9FE-6442341C839D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6183395-753C-4647-B9FE-6442341C839D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
