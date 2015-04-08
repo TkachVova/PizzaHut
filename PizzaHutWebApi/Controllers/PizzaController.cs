@@ -17,8 +17,16 @@ namespace PizzaHutWebApi.Controllers
         public PizzaController()
         {
             repo = new PizzaHutRepository();
+            foreach (var pizza in repo.Pizzas)
+            {
+                Debug.WriteLine(pizza.ToString());
+            }
+            foreach (var cust in repo.Customers)
+            {
+                Debug.WriteLine(cust.ToString());
+            }
         }
-        Lazy<List<order>> orderList = new Lazy<List<order>>();
+        Lazy<List<javaOrder>> orderList = new Lazy<List<javaOrder>>();
         //get url api/api/pizza
         public IEnumerable<pizza> Get()
         {
@@ -27,13 +35,14 @@ namespace PizzaHutWebApi.Controllers
 
 
         //post url api/api/pizza
-        public HttpResponseMessage Post (order _order)
+        public HttpResponseMessage Post (javaOrder _order)
         {
             //orderList.Value.Add(_order);
             //order in output line
             Debug.WriteLine("OOOOOORRRRDDDDEEEeeeeeeeeeeeeeeeeeeeeeeeeeeeeERRRR");
             Debug.WriteLine( _order.ToString());
-            var response = Request.CreateResponse<order>(System.Net.HttpStatusCode.Created, _order);
+            repo.TakeOrder(_order);
+            var response = Request.CreateResponse<javaOrder>(System.Net.HttpStatusCode.Created, _order);
             return response;
         }
 

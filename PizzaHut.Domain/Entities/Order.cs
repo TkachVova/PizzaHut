@@ -8,19 +8,11 @@ namespace PizzaHut.Domain.Entities
 {
     public class order
     {
-        //for storing information about clients
-        public customer client { get; set; }
-        //delivery address is not in customer because it can be always different
+        public int id { get; set; }
+        public bool processing { get; set; }
+        public int customerId { get; set; }
+        public decimal fullprice { get; set; }
         public string deliveryAddress { get; set; }
-        public IEnumerable<cartItem> items { get; set; }
-        public override string ToString()
-        {
-            string ret = client.ToString();
-            foreach (var item in items)
-            {
-                ret += "  " + item.ToString();
-            }
-            return ret;
-        }
+        public System.DateTime orderTime { get; set; }
     }
 }

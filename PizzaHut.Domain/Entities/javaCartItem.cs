@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace PizzaHut.Domain.Entities
 {
-    public class pizza
+    public class javacartItem
     {
         public int id { get; set; }
         public string name { get; set; }
-        public string ingridients { get; set; }
-        public decimal price { get; set; }
+        public int price { get; set; }
+        public int quantity { get; set; }
+        
+        //for outputting in Debug
         public override string ToString()
         {
-            return "pizza  " + id.ToString();
+            return "cart item id  " + id.ToString() + "  " + name + "  " + price.ToString() + "  " + quantity.ToString();
         }
     }
 }

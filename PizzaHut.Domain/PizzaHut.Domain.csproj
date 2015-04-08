@@ -49,9 +49,11 @@
   <ItemGroup>
     <Compile Include="Concrete\PizzaHutDbContext.cs" />
     <Compile Include="Concrete\PizzaHutRepository.cs" />
-    <Compile Include="Entities\CartItem.cs" />
+    <Compile Include="Entities\cartItem.cs" />
+    <Compile Include="Entities\javaCartItem.cs" />
     <Compile Include="Entities\Customer.cs" />
-    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\javaOrder.cs" />
+    <Compile Include="Entities\order.cs" />
     <Compile Include="Entities\Pizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

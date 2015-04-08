@@ -10,6 +10,9 @@ namespace PizzaHut.Domain.Concrete
 {
     public class PizzaHutDbContext : DbContext
     {
+        public DbSet<cartItem> cartItems { get; set; }
+        public DbSet<customer> customers { get; set; }
+        public DbSet<order> orders { get; set; }
         public DbSet<pizza> pizzas { get; set; }
     }
 }

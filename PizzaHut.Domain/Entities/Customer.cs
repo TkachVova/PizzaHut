@@ -11,6 +11,7 @@ namespace PizzaHut.Domain.Entities
         public int id { get; set; }
         public string name { get; set; }
         public string phone { get; set; }
+
         public override string ToString()
         {
             return "Customer" + id.ToString() + " : " + name + "  " + phone;
