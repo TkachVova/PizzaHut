@@ -1,33 +1,36 @@
 'use strict';
 //heart of pizzahut app
 
-var storeApp = angular.module('PizzaStore', []).
-    config(['$routeProvider', function($routeProvider) {
-    $routeProvider.
-        when('/store', {
-        templateUrl: 'partials/store.htm',
-        controller: storeController 
-        }).
-        when('/pizza/:pizzaId', {
-        templateUrl: 'partials/pizza.htm',
-        controller: storeController
-        }).
-        when('/cart', {
-        templateUrl: 'partials/shoppingCart.htm',
-        controller: storeController
-        }).
-        when('/order', {
-            templateUrl: 'partials/order.htm',
-            controller: storeController
-        }).
-        when('/thanks', {
-            templateUrl: 'partials/thanks.htm',
-            controller: storeController
-        }).
-        otherwise({
-        redirectTo: '/store'
-        });
-}]);
+var storeApp = angular.module('PizzaStore', ['720kb.socialshare'])
+        .config(['$routeProvider', function ($routeProvider) {
+        $routeProvider.
+            when('/store', {
+                templateUrl: 'partials/store.htm',
+                controller: storeController
+            }).
+            when('/pizza/:pizzaId', {
+                templateUrl: 'partials/pizza.htm',
+                controller: storeController
+            }).
+            when('/cart', {
+                templateUrl: 'partials/shoppingCart.htm',
+                controller: storeController
+            }).
+            when('/order', {
+                templateUrl: 'partials/order.htm',
+                controller: storeController
+            }).
+            when('/thanks', {
+                templateUrl: 'partials/thanks.htm',
+                controller: storeController
+            }).
+            otherwise({
+                redirectTo: '/store'
+            });
+    }]);
+
+
+
 
 
 
