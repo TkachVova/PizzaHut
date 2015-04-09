@@ -1,4 +1,4 @@
-﻿"use strict";
+﻿
 function store() {
     this.pizzas = [
         //new pizza(1, "Americana", "Classic marinara sauce, pepperoni, seasoned pork, beef, fresh mushrooms, fresh green bell peppers and fresh red onions.", 12),

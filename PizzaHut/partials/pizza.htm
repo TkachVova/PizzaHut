@@ -26,30 +26,33 @@
 
 
 
-            <div class="well">
+                <div class="well">
 
-                <div class="span3 offset10">
-                    <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
-                        <i class="icon-shopping-cart" />
-                        <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
-                    </a>
+                    <div class="span3 offset10">
+                        <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                            <i class="icon-shopping-cart" />
+                            <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
         <!-- buttons -->
         <div class="span4">
-            <button class="btn btn-block btn-success"
-                    ng-click="cart.addItem(pizza.id, pizza.name, pizza.price, 1)">
+            <button 
+                class="btn btn-block btn-success" 
+                ng-click="cart.addItem(pizza.id, pizza.name, pizza.price, 1)">
                 <i class="icon-shopping-cart icon-white" /> add to cart
             </button>
-            <button class="btn btn-block btn-danger"
-                    ng-click="cart.addItem(pizza.id, pizza.name, pizza.price, -10000)"
-                    ng-disabled="cart.getTotalCount(pizza.id) < 1">
+            <button 
+                class="btn btn-block btn-danger" 
+                ng-click="cart.addItem(pizza.id, pizza.name, pizza.price, -10000)"
+                ng-disabled="cart.getTotalCount(pizza.id) < 1">
                 <i class="icon-trash icon-white" /> remove from cart
             </button>
-            <button class="btn btn-block"
-                    onclick="window.location.href=''">
+            <button 
+                class="btn btn-block" 
+                onclick="window.location.href=''">
                 <i class="icon-chevron-left" /> back to store
             </button>
         </div>

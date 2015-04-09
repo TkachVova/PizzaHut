@@ -16,19 +16,22 @@ function storeController($scope, $routeParams, $location, $http, DataService, pi
     }
 
     //getting pizza list from api/pizza
-    $scope.store.pizzas =
+    $scope.store.pizzas = 
     {
-        id: "",
-        name: "",
-        ingridients: "",
-        price: ""
-    };
+       id : "" ,
+       name : "",
+       ingridients : "",
+       price : ""
+    }
 
-    pizzaService.getPizzas($scope);
+    pizzaService.getPizzas($scope)
+
+    
 
     //for going to link after ng-click
     $scope.go = function (path) {
         $location.path(path);
-    }
+    };
 
+   
 }

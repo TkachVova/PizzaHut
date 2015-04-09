@@ -58,13 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-social.css" />
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Content\socbuttons.css" />
-    <Content Include="img\facebook-small.png" />
     <Content Include="img\pizzas\a.png" />
-    <Content Include="img\small-twitter.png" />
     <Content Include="js\angular-socialshare.js" />
     <Content Include="js\order.js" />
     <Content Include="js\user.js" />
@@ -929,7 +923,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53893</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53837/</IISUrl>
+          <IISUrl>http://localhost:53833/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
