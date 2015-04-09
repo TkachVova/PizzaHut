@@ -1,6 +1,4 @@
-﻿<p class="text-info">
-    <h1>{{pizza.name}}</h1><br />
-</p>
+﻿
 
 <div class="container-fluid">
     <div class="row-fluid">
@@ -8,8 +6,10 @@
 
             <!-- pizza info -->
             <div class="well">
-
-                <div class="span3 offset10">
+                <div class="span2">
+                    <b>{{pizza.name}}</b>
+                </div>
+                <div class="span3 offset7">
                     <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                         <i class="icon-shopping-cart" />
                         <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
@@ -28,7 +28,7 @@
 
                 <div class="well">
 
-                    <div class="span3 offset10">
+                    <div class="span3 offset9">
                         <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                             <i class="icon-shopping-cart" />
                             <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>

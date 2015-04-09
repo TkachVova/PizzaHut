@@ -58,8 +58,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-combined.min.css" />
     <Content Include="img\pizzas\a.png" />
     <Content Include="js\angular-socialshare.js" />
+    <Content Include="js\angular.min.js" />
     <Content Include="js\order.js" />
     <Content Include="js\user.js" />
     <Content Include="partials\order.htm" />

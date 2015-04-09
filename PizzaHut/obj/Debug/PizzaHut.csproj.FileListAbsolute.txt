@@ -10,3 +10,9 @@ D:\FutureWork\PizzaHut_backup9\PizzaHut\bin\PizzaHut.pdb
 D:\FutureWork\PizzaHut_backup9\PizzaHut\obj\Debug\PizzaHut.csprojResolveAssemblyReference.cache
 D:\FutureWork\PizzaHut_backup9\PizzaHut\obj\Debug\PizzaHut.dll
 D:\FutureWork\PizzaHut_backup9\PizzaHut\obj\Debug\PizzaHut.pdb
+C:\Users\Vladymyr\Documents\PizzaHut\PizzaHut\bin\PizzaHut.dll.config
+C:\Users\Vladymyr\Documents\PizzaHut\PizzaHut\bin\PizzaHut.dll
+C:\Users\Vladymyr\Documents\PizzaHut\PizzaHut\bin\PizzaHut.pdb
+C:\Users\Vladymyr\Documents\PizzaHut\PizzaHut\obj\Debug\PizzaHut.csprojResolveAssemblyReference.cache
+C:\Users\Vladymyr\Documents\PizzaHut\PizzaHut\obj\Debug\PizzaHut.dll
+C:\Users\Vladymyr\Documents\PizzaHut\PizzaHut\obj\Debug\PizzaHut.pdb
