@@ -13,6 +13,7 @@ namespace PizzaHutWebApi.Controllers
 {
     public class PizzaController : ApiController
     {
+        //do dependency injection later
         PizzaHutRepository repo;
         public PizzaController()
         {

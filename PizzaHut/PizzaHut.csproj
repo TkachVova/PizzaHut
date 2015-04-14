@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap-combined.min.css" />
-    <Content Include="img\pizzas\a.png" />
     <Content Include="js\angular-socialshare.js" />
     <Content Include="js\angular.min.js" />
     <Content Include="js\order.js" />
@@ -98,27 +97,6 @@
     <Content Include="css\style.css" />
     <Content Include="default.htm" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="img\pizzas\1.jpg" />
-    <Content Include="img\pizzas\2.jpg" />
-    <Content Include="img\pizzas\3.jpg" />
-    <Content Include="img\pizzas\4.jpg" />
-    <Content Include="img\pizzas\5.jpg" />
-    <Content Include="img\pizzas\6.jpg" />
-    <Content Include="img\pizzas\7.jpg" />
-    <Content Include="img\pizzas\8.jpg" />
-    <Content Include="img\pizzas\9.jpg" />
-    <Content Include="img\pizzas\10.jpg" />
-    <Content Include="img\pizzas\11.jpg" />
-    <Content Include="img\pizzas\12.jpg" />
-    <Content Include="img\pizzas\13.jpg" />
-    <Content Include="img\pizzas\14.jpg" />
-    <Content Include="img\pizzas\15.jpg" />
-    <Content Include="img\pizzas\16.jpg" />
-    <Content Include="img\pizzas\17.jpg" />
-    <Content Include="img\pizzas\18.jpg" />
-    <Content Include="img\pizzas\19.jpg" />
-    <Content Include="img\pizzas\20.jpg" />
-    <Content Include="img\pizzas\21.jpg" />
     <Content Include="img\Pizza_Hut_logo.png" />
     <Content Include="js\app.js" />
     <Content Include="js\controller.js" />
@@ -909,7 +887,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="img\pizzas\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

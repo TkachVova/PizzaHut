@@ -12,13 +12,13 @@
       }
       else
       {
-          Msg.Text = "Invalid credentials. Please try again.";
+          Msg.Text = "Invalid name or password. Please try again.";
       }
   }
 </script>
 <html>
 <head id="Head1" runat="server">
-  <title>Forms Authentication - Login</title>
+  <title>PizzaHut</title>
 </head>
 <body style="margin-left:45% auto">
   <form id="form1" runat="server">

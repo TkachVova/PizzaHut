@@ -1,10 +1,9 @@
-﻿<div class="container-fluid">
+﻿<!--Shopping cart--> 
+<div class="container-fluid">
     <div class="row-fluid">
         <div class="span8">
-
             <!-- items -->
             <table class="table table-bordered">
-
                 <!-- header -->
                 <tr class="well">
                     <td><b>Item</b></td>
@@ -12,14 +11,12 @@
                     <td class="tdRight"><b>Price</b></td>
                     <td />
                 </tr>
-
                 <!-- empty cart message -->
                 <tr ng-hide="cart.getTotalCount() > 0" >
                     <td class="tdCenter" colspan="4">
                         Your cart is empty.
                     </td>
                 </tr>
-
                 <!-- cart items -->
                 <tr ng-repeat="item in cart.items | orderBy:'name'">
                     <td>{{item.name}}</td>
@@ -78,10 +75,7 @@
                     <i class="icon-ok icon-white" /> Make order
                 </button>
             </p>
-
             <br /><br />
-
-          
         </div>
     </div>
 </div>

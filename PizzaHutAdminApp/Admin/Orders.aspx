@@ -6,7 +6,7 @@
     <h2>Orders</h2>
     <asp:EntityDataSource ID="OrdersDataSource1" runat="server" ConnectionString="name=PizzaHutDbEntities" DefaultContainerName="PizzaHutDbEntities" EnableDelete="True" EnableFlattening="False" EnableUpdate="True" EntitySetName="orders">
     </asp:EntityDataSource>
-    
+        <!-- Grid of orders -->
         <asp:GridView ID="OrdersGridView1" runat="server" DataSourceID="OrdersDataSource1" AutoGenerateColumns="False" DataKeyNames="id, customerId" AllowPaging="True" AllowSorting="True"
             OnRowCommand="OrdersGridView1RowCommand" SelectedRowStyle-BackColor="LightGray" CellPadding="4" ForeColor="Black" GridLines="Horizontal" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
             <Columns>
@@ -68,6 +68,7 @@
             <SortedDescendingHeaderStyle BackColor="#242121"></SortedDescendingHeaderStyle>
         </asp:GridView>
 
+        <!-- Entity data source for getting selected order for detail view -->
         <asp:EntityDataSource ID="OrderDetails" runat="server" ConnectionString="name=PizzaHutDbEntities" DefaultContainerName="PizzaHutDbEntities" EnableFlattening="False"
             EntitySetName="orders" Select="it.[id], it.[fullprice], it.[deliveryAddress]" Where="it.[id]=@id">
             <WhereParameters>
@@ -90,6 +91,7 @@
 
         <PagerStyle HorizontalAlign="Right" BackColor="White" ForeColor="Black"></PagerStyle>
     </asp:DetailsView>
+        <!-- Getting details of selected customer -->
     <asp:EntityDataSource ID="CustomerDataSource1" runat="server" ConnectionString="name=PizzaHutDbEntities" DefaultContainerName="PizzaHutDbEntities" 
         EnableFlattening="False"  CommandText="SELECT c.id, c.name, c.phone FROM customers as c WHERE c.id = @customerId">
         <CommandParameters>
@@ -98,7 +100,7 @@
           Type="Int32"/>
         </CommandParameters>
     </asp:EntityDataSource>
-    <asp:DetailsView ID="DetailsView2" runat="server" Height="50px" Width="200px" DataSourceID="CustomerDataSource1" AutoGenerateRows="False" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+    <asp:DetailsView ID="CustomerDetailsView2" runat="server" Height="50px" Width="200px" DataSourceID="CustomerDataSource1" AutoGenerateRows="False" DataKeyNames="id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
         <EditRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White"></EditRowStyle>
         <Fields>
             <asp:BoundField DataField="id" HeaderText="Customer's id" SortExpression="id"></asp:BoundField>
@@ -111,6 +113,7 @@
 
         <PagerStyle HorizontalAlign="Right" BackColor="White" ForeColor="Black"></PagerStyle>
     </asp:DetailsView>
+        <!-- Getting table of pizzas in order and their quantities -->
     <asp:EntityDataSource ID="PizzasInCartDataSource1" runat="server" ConnectionString="name=PizzaHutDbEntities" DefaultContainerName="PizzaHutDbEntities" EnableFlattening="False"
         CommandText="SELECT DISTINCT p.name, p.price, ci.quantity 
                      FROM cartItems AS ci 

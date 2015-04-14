@@ -35,7 +35,7 @@ order.prototype.Post = function () {
 //Order.userAddress = this.userAddress;
 //Order.userPhone = this.userPhone;
 //Order.items = this.items;
-alert(JSON.stringify(this));
+//alert(JSON.stringify(this));
 $.ajax({
     type: "POST",
     data: JSON.stringify(this),
@@ -46,7 +46,7 @@ this.ClearOrder();
 //alert(JSON.stringify(Order));
 };
  
-
+//customer class
 function customer(id, name, phone) {
     this.id = id;
     this.name = name;

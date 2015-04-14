@@ -21,7 +21,7 @@
     
 <div class="span4 offset1"  ng-repeat="pizza in store.pizzas|slice:store.currentPage*store.pageSize:store.currentPage*store.pageSize+store.pageSize">
     <a href="#/pizza/{{pizza.id}}"><b>{{pizza.name}}</b></a><br />
-    <img ng-src="img/pizzas/a.png" alt="{{pizza.name}}"/>
+    <img ng-src="img/pizzas/{{pizza.id}}.png" alt="{{pizza.name}}"/>
     <p>{{pizza.ingridients|cut:true:40:' ...'}}</p>
     <p>{{pizza.price | currency}}</p>
     <p>

@@ -1,4 +1,5 @@
-﻿<div class="container-fluid">
+﻿<!--Order page. We post order here--> 
+<div class="container-fluid">
     <div class="row-fluid">
         <div class="span6">
 
@@ -11,9 +12,6 @@
                     <td class="tdCenter"><b>Quantity</b></td>
                     <td class="tdRight"><b>Price</b></td> 
                 </tr>
-
-                
-
                 <!-- cart items -->
                 <tr ng-repeat="item in order.items | orderBy:'name'">
                     <td>{{item.name}}</td>

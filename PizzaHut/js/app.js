@@ -51,7 +51,7 @@ storeApp.factory("DataService", function () {
     };
 });
 
-
+//getting pizzas service
 storeApp.service('pizzaService', ['$http', function ($http)
 {
     this.getPizzas = function ($scope)

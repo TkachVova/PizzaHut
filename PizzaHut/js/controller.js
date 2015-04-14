@@ -1,8 +1,9 @@
 ﻿'use strict';
 
-// the storeController contains two objects:
+
 // - store: contains the pizza list
 // - cart: the shopping cart object
+// - order: containg user name, address, phone, and list of pizzas he wants to buy
 function storeController($scope, $routeParams, $location, $http, DataService, pizzaService) {
 
     // get store and cart from service
