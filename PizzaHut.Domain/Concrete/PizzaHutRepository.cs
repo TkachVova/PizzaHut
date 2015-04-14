@@ -64,7 +64,7 @@ namespace PizzaHut.Domain.Concrete
             ord.customerId = context.customers.Max(p => p.id);
             ord.deliveryAddress = _order.deliveryAddress;
             ord.fullprice = _order.items.Sum(p  => p.price*p.quantity);
-            ord.processing = true;
+            ord.processing = false;
             ord.orderTime = DateTime.Now;
             context.orders.Add(ord);
             context.SaveChanges();
